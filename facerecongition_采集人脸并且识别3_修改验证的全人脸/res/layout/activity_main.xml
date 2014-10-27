@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+    android:background="@drawable/top"
+    >
+
+    <TextView
+        android:id="@+id/camera_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="" />
+
+    <Button
+        android:id="@+id/main_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/main_exit"
+        android:layout_alignBottom="@+id/main_exit"
+        android:layout_alignRight="@+id/main_recon"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/main_exit"
+        android:text="人员信息" />
+
+    <Button
+        android:id="@+id/main_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="37dp"
+        android:layout_toLeftOf="@+id/main_person"
+        android:text="删除所有人员" />
+
+    <Button
+        android:id="@+id/main_modkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_person"
+        android:layout_alignRight="@+id/main_person"
+        android:layout_below="@+id/main_exit"
+        android:text="修改密码" />
+
+    <Button
+        android:id="@+id/main_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_del"
+        android:layout_alignLeft="@+id/main_recon"
+        android:text="退出管理模式" />
+
+    <Button
+        android:id="@+id/main_recon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_person"
+        android:layout_alignLeft="@+id/main_addperson"
+        android:layout_marginBottom="14dp"
+        android:text="人脸识别" />
+
+    <Button
+        android:id="@+id/main_addperson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_recon"
+        android:layout_alignLeft="@+id/camera_textView"
+        android:text="添加人脸" />
+
+</RelativeLayout>

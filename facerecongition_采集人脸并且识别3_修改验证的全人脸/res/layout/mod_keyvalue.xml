@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/top"
+    >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/camera_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旧密码 ：" 
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/old_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" 
+            android:layout_weight="1"
+            >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新密码 ："
+             android:textSize="20sp"
+             />
+
+        <EditText
+            android:id="@+id/new_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+             android:layout_weight="1"
+             />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    确认  :"
+            android:gravity="right"
+             android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/connew_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" 
+             android:layout_weight="1"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/mod_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/mod_keyok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定" 
+             android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/mod_keyno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" 
+             android:layout_weight="1"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+</LinearLayout>

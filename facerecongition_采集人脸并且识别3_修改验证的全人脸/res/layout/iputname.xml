@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/loginForm"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+<TableRow>
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="ID:"
+    android:textSize="10pt" 
+    android:gravity="right"
+    />
+
+<!-- 输入用户名的文本框 -->
+
+<EditText
+    android:id="@+id/iput_editTextID"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="number" 
+    android:layout_weight="1"
+    android:layout_marginRight="3px"
+    >
+
+    <requestFocus />
+</EditText>
+
+</TableRow>
+<TableRow>
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="姓名:"
+    android:textSize="10pt"
+    android:layout_margin="6px"
+     />
+
+<!-- 输入电话号码的文本框 -->
+
+<EditText
+    android:id="@+id/iput_editTextname"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:layout_weight="1"
+    android:layout_marginRight="3px"
+     />
+
+</TableRow>
+</TableLayout>

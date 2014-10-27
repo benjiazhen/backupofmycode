@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+      android:id="@+id/relativeLayout1"  
+      android:layout_width="fill_parent"  
+      android:layout_height="fill_parent" > 
+
+    <SurfaceView
+        android:id="@+id/camera"
+       android:layout_width="fill_parent"  
+           android:layout_height="fill_parent"/>
+
+        <Button
+            android:id="@+id/camera_ok"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="拍照" />
+
+</RelativeLayout>  

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/top"
+     >
+
+    <Button
+        android:id="@+id/mode_Man"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="管理模式" />
+
+    <Button
+        android:id="@+id/mode_recon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="识别模式" />
+
+    <Button
+        android:id="@+id/start_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出" />
+
+</LinearLayout>
